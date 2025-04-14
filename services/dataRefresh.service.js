@@ -1,9 +1,9 @@
-const csvLoader = require('./csvLoader'); // your loadCsv logic here
-const logRefreshStatus = require('../utils/refreshLogger');
+const csvLoader = require('./csvLoader.service'); 
+const logRefreshStatus = require('../utils/refershLogger');
 
 const refreshSalesData = async () => {
   try {
-    await csvLoader(); // your CSV loading logic should handle duplicates and updates
+    await csvLoader(); 
     logRefreshStatus('success', 'Sales data refreshed successfully.');
     return { success: true, message: 'Sales data refreshed successfully.' };
   } catch (err) {

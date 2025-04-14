@@ -1,4 +1,4 @@
-const loadCSV = require('../services/loadCSV');
+const loadCSV = require('../services/csvLoader.service');
 const path = require('path');
 
 const uploadCSV = async (req, res) => {

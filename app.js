@@ -8,7 +8,7 @@ const revenueRoutes = require('./routes/revenue.routes');
 const csvRoutes = require('./routes/revenue.routes');
 const {connectToDB} = require('./config/config')
 const cron = require('node-cron');
-const { refreshSalesData } = require('./services/dataRefreshService');
+const { refreshSalesData } = require('./services/dataRefresh.service');
 
 //Middlewares
 app.use(cors());

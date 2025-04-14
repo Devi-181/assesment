@@ -2,9 +2,6 @@ const csv = require('fast-csv');
 const fs = require('fs');
 
 const {Customer,Order,Product,OrderItem} = require('../models');
-const { resolve } = require('path');
-const { rejects } = require('assert');
-const { error } = require('console');
 
 const loadCSV = async (csvFilePath) => {
     try {
